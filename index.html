@@ -19,13 +19,13 @@
           <nav class="header__menu menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#" class="menu__link">Home</a>
+                <a data-goto=".main" href="#" class="menu__link">Home</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">About Me</a>
+                <a data-goto=".about" href="#" class="menu__link">About Me</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Contact</a>
+                <a data-goto=".contacts" href="#" class="menu__link">Contact</a>
               </li>
             </ul>
           </nav>
@@ -72,31 +72,51 @@
             <h2 class="works__title title">My recent <span>works</span></h2>
             <div class="works__items items-works">
               <nav class="items-works__navigation">
-                <button class="items-works__type button button_dark active">
+                <button
+                  data-work-type=""
+                  class="items-works__type button button_dark active"
+                >
                   All
                 </button>
-                <button class="items-works__type button button_dark">
+                <button
+                  data-work-type="FRONT-END"
+                  class="items-works__type button button_dark"
+                >
                   FRONT-END
                 </button>
-                <button class="items-works__type button button_dark">
+                <button
+                  data-work-type="BACK-END"
+                  class="items-works__type button button_dark"
+                >
                   BACK-END
                 </button>
-                <button class="items-works__type button button_dark">
+                <button
+                  data-work-type="FULL STACK"
+                  class="items-works__type button button_dark"
+                >
                   FULL STACK
                 </button>
               </nav>
               <div class="items-works__body">
-                <a href="#" class="items-works__item">
+                <a
+                  data-work-type="FRONT-END"
+                  href="#"
+                  class="items-works__item"
+                >
                   <div class="items-works__image">
                     <img src="img/works/items/01.png" alt="Image" />
                   </div>
                 </a>
-                <a href="#" class="items-works__item">
+                <a data-work-type="BACK-END" href="#" class="items-works__item">
                   <div class="items-works__image">
                     <img src="img/works/items/02.png" alt="Image" />
                   </div>
                 </a>
-                <a href="#" class="items-works__item">
+                <a
+                  data-work-type="FULL STACK"
+                  href="#"
+                  class="items-works__item"
+                >
                   <div class="items-works__image">
                     <img src="img/works/items/03.png" alt="Image" />
                   </div>
@@ -108,7 +128,9 @@
         <section class="page__contacts contacts">
           <div class="contacts__container">
             <div class="contacts__content">
-              <h2 class="contacts__title title">Got a project in <span>mind?</span></h2>
+              <h2 class="contacts__title title">
+                Got a project in <span>mind?</span>
+              </h2>
               <div class="contacts__image">
                 <img src="img/contacts/image.svg" alt="Image" />
               </div>
@@ -146,7 +168,9 @@
                 ></textarea>
               </div>
               <div class="form__item">
-                <button type="submit" class="form__button button"><span>Send message</span></button>
+                <button type="submit" class="form__button button">
+                  <span>Send message</span>
+                </button>
               </div>
             </form>
           </div>
@@ -157,17 +181,26 @@
           <nav class="footer__menu menu-footer">
             <ul class="menu-footer__list">
               <li class="menu-footer__item">
-                <a href="#" class="menu-footer__link menu-footer__link_home"
+                <a
+                  href="#"
+                  data-goto=".main"
+                  class="menu-footer__link menu-footer__link_home"
                   >Home</a
                 >
               </li>
               <li class="menu-footer__item">
-                <a href="#" class="menu-footer__link menu-footer__link_about"
+                <a
+                  href="#"
+                  data-goto=".about"
+                  class="menu-footer__link menu-footer__link_about"
                   >About me</a
                 >
               </li>
               <li class="menu-footer__item">
-                <a href="#" class="menu-footer__link menu-footer__link_contacts"
+                <a
+                  href="#"
+                  data-goto=".contacts"
+                  class="menu-footer__link menu-footer__link_contacts"
                   >Contact</a
                 >
               </li>
@@ -190,5 +223,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
