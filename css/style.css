@@ -1,8 +1,39 @@
 @import url("reset.css");
 
+@import url("common.css");
+
+@import url("header.css");
+
+@import url("footer.css");
+
 body {
     font-family: "Poppins", Helvetica, sans-serif;
     background-color: #222831;
     color: rgba(238, 238, 238, 0.75);
     font-size: 18px;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+    padding-top: 125px;
+}
+
+@media (max-width: 550px) {
+    .main {
+        padding-top: 113px;
+    }
+}
+
+[class*="__container"] {
+    max-width: 1280px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
