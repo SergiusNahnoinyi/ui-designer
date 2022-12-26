@@ -1,0 +1,8 @@
+@import url("reset.css");
+
+body {
+    font-family: "Poppins", Helvetica, sans-serif;
+    background-color: #222831;
+    color: rgba(238, 238, 238, 0.75);
+    font-size: 18px;
+}
