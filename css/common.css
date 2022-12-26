@@ -43,7 +43,8 @@
 }
 
 .button_dark:hover,
-.button_dark:focus {
+.button_dark:focus,
+.button_dark.active {
     background-color: #00adb5;
 }
 
